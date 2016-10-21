@@ -1,0 +1,95 @@
+@import "bootstrap";
+@import "font-awesome";
+* {
+    box-sizing: border-box;
+}
+
+
+/*div {
+ border: 1px solid red;
+ background: url(http://snugug.github.io/responsive-grids/images/symmetric-grid-bootstrap.png (74KB)*/
+
+
+/*);
+ background-size: contain;
+height:300px;
+}
+}*/
+
+.jumbotron {
+    text-align: center;
+    padding-top: 50px;
+    background-image: url(north-beach-village-resort-slide-4.jpg);
+    background-size: cover;
+}
+
+#surf {
+    color: white;
+}
+
+#icon {
+  height: 30px;
+  widht: 30px;
+}
+
+.beach {
+    text-align: right;
+}
+
+#post {
+    text-align: center;
+}
+
+#bridge {
+  height: 30px;
+  width: 30px;
+}
+
+#beach {
+  height: 80px;
+  width: 80px;
+}
+
+#sky {
+  height: 200px;
+  width: 200px;
+}
+
+#tinter {
+    background: blue;
+    opacity: 0.8%;
+}
+
+#nav {
+  padding-left: 1200px;
+  text-align: right;
+  color: white;
+}
+
+#nav_button {
+  text-align: right;
+  color: white;
+}
+
+#first {
+  padding-bottom: 10px;
+}
+
+#second {
+  padding-top: 10px;
+}
+
+#do_not {
+  text-align: left;
+  color: white;
+}
+
+#button_three {
+  text-align: right;
+  color: white;
+}
+
+#button_four {
+  text-align: right;
+  color: white;
+}
