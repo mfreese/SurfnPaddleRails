@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SurfnPaddleRails</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  </body>
+
+    </div>
+    <div>
+
+        <div class="jumbotron">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                          <%= image_tag("logo-surf-n-paddle.svg", id: "icon") %>
+                            <h5>Surf & Paddle Co. Blog</h5></a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Search <span id="icon"class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 id="surf">SURF & PADDLE CO.</h1>
+            <h6>An Iron Yard Academy Project Est. Fall 2013</h6>
+
+        </div>
+        <main class="container-fluid">
+
+                        <div class="row">
+                            <%= yield %>
+                                              
+                                                  <div class "row">
+                                                    <div class="jumbotron">
+                                                        <nav class="navbar">
+                                                            <div class="container-fluid">
+                                                                <div class="navbar-header">
+                                                                    <a class="navbar-brand" href="#">
+                                                                      <h5>Do not copy my webpage</h5>
+                                                                      <h4 id="nav">Nav 1</h4>
+                                                                      <h4 id="nav_button">Nav 2</h4>
+                                                                      <h4 id=button_three>Nav 3</h4>
+                                                                      <h4 id=button_four>Nav 4</h4>
+
+                                                  </div>
+
+
+        </main>
+
+
+        <!-- Content goes here. -->
+        <!-- Scripts go here. -->
+        <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
+        <script type="text/javascript" src="global.js"></script>
+
+        </div>
+
+  </body>
+</html>

@@ -1,0 +1,77 @@
+
+<div class="row">
+    <div class="col-md-7 col-md-offset-1 col-xs3">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="col-md-4">
+
+    </div>
+    <div class="row">
+        <div class="col-md-7 col-md-offset-1 col-xs3">
+          <h1 class="text-uppercase"> <%= @posts.title %> </h1>
+          <%= image_tag("bridge", class: "img-circle img-responsive", id:"bridge") %>
+          <h6> <% @posts.author %> </h6>
+          <h6 class="text-underline"><%= @posts.created_at.strftime("%B %d, %Y") %></h6>
+
+
+          <p>
+            <%= @posts.body %>
+          </p>
+          <button type="button" class="btn btn-default btn-xs">
+                          <span class="fa fa-star" aria-hidden="true"></span> Click Here
+                        </button>
+                              <button type="button" class="btn btn-default btn-xs">
+                                <span class="fa fa-star" aria-hidden="true"></span> Read Later
+                              </button>
+
+                              <button type="button" class="btn btn-default btn-xs">
+                                <span class="fa fa-star" aria-hidden="true"></span> comments
+                              </button>
+        </div>
+
+
+
+            <div class="col-xs-3">
+                <%= (image_tag "beach", class: "img-circle img-responsive", id: "beach") %>
+                <h6> <%= @posts.author %></h6>
+                <%= image_tag ("sky") %>
+
+                <span class="glyphicons glyphicons-camera"></span> <span class="glyphicons glyphicons-music"></span> <span class="glyphicons glyphicons-home"></span>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h6>
+                </div>
+                </div>
+            </div>
+
+            <h1 id="post">Most Popular Posts</h1>
+          </div>
+            <div class="row">
+                    <div id="tinter">
+                        <div class="col-md-3">
+                          <%= link_to(image_tag("sky"),posts_path(id:3)) %>
+                        <h2 id="first">Sky</h2>
+                        </div>
+                        <div class="col-md-3">
+                        <%=link_to(image_tag("starfish"),posts_path(id:2))%>                                             <h2 id="second">Starfish</h2>
+                            </div>
+                            <div class="col-md-3">
+                              <%= link_to(image_tag("mountain"),posts_path(id:1)) %>
+                              <h1 id="third">Mountain</h1>
+                            </div>
+                            <div class="col-md-3">
+                              <%= link_to(image_tag("water"),posts_path(id:4)) %>
+                              <h1 id="fourth">Picture</h1>
+                            </div>
+                        </div>
+                    </div>
